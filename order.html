@@ -7,15 +7,17 @@
 </head>
 <body>
     
-
 <!-- INTRO -->
+<header>
 <h1>Order a Melongram</h1>
 
     <p>There's no better way to show a loved one you care than with a Melongram.</p>
 
     <p>Each Melongram comes with a custom message printed on high-quality cardstock
     and your choice of a hand-picked, premium melon.</p>
+</header>
 
+<section>
 <!-- MELON OPTIONS -->
 <h2>Melon Options</h2>
 
@@ -35,39 +37,72 @@
             <td>$1,750,00.00</td>
         </tr>
     </table>
+</section>
+
 
 <!-- ORDER FORM -->
+<section>
+
 <h2>Order Form</h2>
 
 <form>
 
+    <!-- USER NAME AND RECIEVER OF MELON -->
+<fieldset>
+    <legend>Human Order Info:</legend>
     <label for=name>Name:</label>
     <input type="text" name="name" id="name"/>
     <label for="who">Who do you want to send it to?</label>
     <input type="text" name="reciever" id="who"/>
+</fieldset>
+</br></br>
 
-    <p>Choose a melon:</p>
-    <select>
+    <!-- MELON DROP DOWN BOX -->
+<fieldset>
+    <legend>Melon Selection:</legend>
+    <label for="melon-drop-down">Choose a melon:</label>
+    <select id="melon-drop-down">
         <option value="watermelon">Watermelon</option>
         <option value="canteloupe">Canteloupe</option>
         <option value="honeydew">Honeydew</option>
     </select>
+</fieldset>
+</br></br>
 
-    <p>When should we deliver?</p>
+    <!-- MELON DELIVERY -->
+<fieldset>
+    <legend>Select time for delevery:</legend>
+    <label for="location-radios">When should we deliver?</label>
+    <div id="location-radios">
     <input type="radio" name="time" value="AM">Morning</input>
     <input type="radio" name="time" value="PM">Evening</input>
     <input type="radio" name="time" value="any">Any time</input>
+    </div>
+</fieldset>
+</br></br>
 
-    <p>Enter your message:</p>
-    <textarea name="message" rows="4" cols="50"></textarea>
+    <!-- GIFT MESSAGE TEXT BOX -->
+<fieldset>
+    <legend>Gift Message:</legend>
+    <label for="message-box">Enter your message:</label>
+    <textarea name="message" rows="4" cols="50" id="message-box"></textarea>
+</fieldset>
+</br></br>
 
-    <p>Subscribe to our newsletter</p>
-    <input type="checkbox" name="subscribe" value="yes">Yes</input>
+    <!-- SUBSCRIBE TO MELON NEWSLETTER -->
+<fieldset>
+    <legend>Subscribe:</legend>
+    <label for="subscribe">Subscribe to our newsletter</label>
+    <input type="checkbox" name="subscribe" value="yes" id="subscribe">Yes
+    </input>
+</fieldset>
     
+    <!-- SUMBIT FORM BUTTON -->
     <button type="submit">Submit</button>
     
 </form>
 
+</section>
 
 </body>
 </html>
