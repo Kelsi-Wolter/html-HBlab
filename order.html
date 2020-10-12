@@ -8,65 +8,65 @@
 <body>
     
 
+<!-- INTRO -->
 <h1>Order a Melongram</h1>
 
-<p>There's no better way to show a loved one you care than with a Melongram.</p>
+    <p>There's no better way to show a loved one you care than with a Melongram.</p>
 
-<p>Each Melongram comes with a custom message printed on high-quality cardstock
-and your choice of a hand-picked, premium melon.</p>
+    <p>Each Melongram comes with a custom message printed on high-quality cardstock
+    and your choice of a hand-picked, premium melon.</p>
 
+<!-- MELON OPTIONS -->
 <h2>Melon Options</h2>
 
-<p>Choose from one of these melons:</p>
+    <p>Choose from one of these melons:</p>
+    <!-- The <tr> element defines a table row, the <th> element defines a table header, and the <td> element defines a table cell. -->
+    <table>
+        <tr>
+            <td>Watermelon</td>
+            <td>$1,200.00</td>
+        </tr>
+        <tr>
+            <td>Canteloupe</td>
+            <td>$400.00</td>
+        </tr>
+        <tr>
+            <td>Honeydew</td>
+            <td>$1,750,00.00</td>
+        </tr>
+    </table>
 
-<!-- The <tr> element defines a table row, the <th> element defines a table header, and the <td> element defines a table cell. -->
-<table>
-    <tr>
-        <td>Watermelon</td>
-        <td>$1,200.00</td>
-    </tr>
-    <tr>
-        <td>Canteloupe</td>
-        <td>$400.00</td>
-    </tr>
-    <tr>
-        <td>Honeydew</td>
-        <td>$1,750,00.00</td>
-    </tr>
- 
- </table>
-
+<!-- ORDER FORM -->
 <h2>Order Form</h2>
 
 <form>
 
+    <label for=name>Name:</label>
+    <input type="text" name="name" id="name"/>
+    <label for="who">Who do you want to send it to?</label>
+    <input type="text" name="reciever" id="who"/>
 
-<input type="text" name="name">Your Name: </input> <br>
-<br>
+    <p>Choose a melon:</p>
+    <select>
+        <option value="watermelon">Watermelon</option>
+        <option value="canteloupe">Canteloupe</option>
+        <option value="honeydew">Honeydew</option>
+    </select>
 
-<input type="text" name="email">Who are we sending this to? </input>
+    <p>When should we deliver?</p>
+    <input type="radio" name="time" value="AM">Morning</input>
+    <input type="radio" name="time" value="PM">Evening</input>
+    <input type="radio" name="time" value="any">Any time</input>
 
-<p>Choose a melon:</p>
-<select>
-    <option value="watermelon">Watermelon</option>
-    <option value="canteloupe">Canteloupe</option>
-    <option value="honeydew">Honeydew</option>
-</select>
+    <p>Enter your message:</p>
+    <textarea name="message" rows="4" cols="50"></textarea>
 
-When should we deliver?
-
-html 
-Morning
-Evening
-Any time
-
-Enter your message:
-
-Subscribe to our newsletter
-Yes
-
+    <p>Subscribe to our newsletter</p>
+    <input type="checkbox" name="subscribe" value="yes">Yes</input>
+    
+    <button type="submit">Submit</button>
+    
 </form>
-
 
 
 </body>
